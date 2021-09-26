@@ -452,7 +452,7 @@ contract DssDeployTest is DssDeployTestBase {
         uint batchId = cat.bite("VLX", address(this)); // The CDP remains unsafe after 1st batch is bitten
         wvlx.mint(10 ether);
         wvlx.transfer(address(user1), 10 ether);
-        user1.doWvlx(address(wvlx), address(vlxJoin), address(user1), 10 ether);
+        user1.doWvlxJoin(address(wvlx), address(vlxJoin), address(user1), 10 ether);
         user1.doFrob(address(vat), "VLX", address(user1), address(user1), address(user1), 10 ether, 1000 ether);
 
         col.mint(100 ether);
