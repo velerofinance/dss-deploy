@@ -330,8 +330,8 @@ contract DssDeployTestBase is DSTest, ProxyActions {
         pause = dssDeploy.pause();
         authority.permit(address(this), address(pause), bytes4(keccak256("plot(address,bytes32,bytes,uint256)")));
 
-        wusdt = new WVLX();
-        vlxJoin = new GemJoin(address(vat), "VLX", address(wusdt));
+        wvlx = new WVLX();
+        vlxJoin = new GemJoin(address(vat), "VLX", address(wvlx));
         dssDeploy.deployCollateral("VLX", address(vlxJoin), address(pipVLX));
 
         col = new DSToken("COL");
