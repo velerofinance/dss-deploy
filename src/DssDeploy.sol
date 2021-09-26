@@ -293,7 +293,7 @@ contract DssDeploy is DSAuth {
 
         // Deploy
         usdv = usdvFab.newUsdv(address(this), chainId);
-        usdvJoin = usdvJoinFab.newUsdvJoin()(address(vat), address(usdv));
+        usdvJoin = usdvJoinFab.newUsdvJoin(address(vat), address(usdv));
         usdv.rely(address(usdvJoin));
     }
 
