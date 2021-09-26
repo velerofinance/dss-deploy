@@ -354,7 +354,7 @@ contract DssDeploy is DSAuth {
         vow.deny(address(this));
         jug.deny(address(this));
         pot.deny(address(this));
-        usfv.deny(address(this));
+        usdv.deny(address(this));
         spotter.deny(address(this));
         flap.deny(address(this));
         flop.deny(address(this));
