@@ -292,7 +292,7 @@ contract DssDeploy is DSAuth {
         require(address(vat) != address(0), "Missing previous step");
 
         // Deploy
-        usdv = usdvFab.newUsdv()(address(this), chainId);
+        usdv = usdvFab.newUsdv(address(this), chainId);
         usdvJoin = usdvJoinFab.newUsdvJoin()(address(vat), address(usdv));
         usdv.rely(address(usdvJoin));
     }
