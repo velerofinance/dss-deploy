@@ -35,7 +35,6 @@ import {End} from "dss/end.sol";
 import {ESM} from "esm/ESM.sol";
 import {Pot} from "dss/pot.sol";
 import {Spotter} from "dss/spot.sol";
-import "../../dss-vest/src/DssVest.t.sol";
 
 contract VatFab {
     function newVat(address owner) public returns (Vat vat) {
