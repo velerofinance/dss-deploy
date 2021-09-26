@@ -337,7 +337,7 @@ contract DssDeployTestBase is DSTest, ProxyActions {
 
     function deployKeepAuth() public {
         dssDeploy.deployVat();
-        dssDeploy.deployUsdv()(99);
+        dssDeploy.deployUsdv(99);
         dssDeploy.deployTaxation();
         dssDeploy.deployAuctions(address(gov));
         dssDeploy.deployLiquidator();
@@ -352,7 +352,7 @@ contract DssDeployTestBase is DSTest, ProxyActions {
         dog = dssDeploy.dog();
         flap = dssDeploy.flap();
         flop = dssDeploy.flop();
-        usdv = dssDeploy.usdv()();
+        usdv = dssDeploy.usdv();
         usdvJoin = dssDeploy.usdvJoin();
         spotter = dssDeploy.spotter();
         pot = dssDeploy.pot();
