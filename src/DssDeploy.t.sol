@@ -658,7 +658,7 @@ contract DssDeployTest is DssDeployTestBase {
 
         // vat
         assertEq(vat.wards(address(dssDeploy)), 1);
-        assertEq(vat.wards(address(vlcJoin)), 1);
+        assertEq(vat.wards(address(vlxJoin)), 1);
         assertEq(vat.wards(address(colJoin)), 1);
         assertEq(vat.wards(address(cat)), 1);
         assertEq(vat.wards(address(jug)), 1);
